@@ -1,0 +1,31 @@
+========== Install Mongo ==========
+
+Inside ---> project:~
+
+sudo apt-get install -y mongodb-org
+
+$ mkdir data
+$ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
+$ chmod a+x mongod
+
+Leave terminal running open and create new terminal
+
+========== NPM Init ==========
+
+~workspace $ mkdir projectName
+~workspace $ cd projectName
+~workspace/projectName $ npm init
+~workspace/projectName $ npm install express mongoose body-parser --save
+~workspace/projectName $ touch app.js
+~workspace/projectName $ c9 app.js
+
+========== Inside JS File ==========
+
+var bpdyParser = require("body-parser"), 
+mongoose       = require("mongoose"),
+express        = require("express"),
+app            = express();
+
+
+
+
