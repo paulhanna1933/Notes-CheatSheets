@@ -38,6 +38,7 @@ if(harryPotterFan){
   console.log("I lead a muggle\'s life.");
 }
 
+
 //Code between curly braces are called blocks. if/else statements have two code blocks.
 
 //Add more conditions to if/else with else if
