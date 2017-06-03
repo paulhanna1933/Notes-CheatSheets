@@ -1,8 +1,12 @@
+=====INSTALL==========INSTALL==========INSTALL==========INSTALL==========INSTALL
+
 sudo apt-get install -y mongodb-org
 
 $ mkdir data
 $ echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest "$@"' > mongod
 $ chmod a+x mongod
+
+=====COMMANDS=====COMMANDS=====COMMANDS=====COMMANDS=====COMMANDS=====COMMANDS
 
 #Mongo Commands
 
@@ -15,7 +19,9 @@ $ chmod a+x mongod
 * find
 * update
 * remove
-________
+
+=====DATABASE REPAIR=====DATABASE REPAIR=====DATABASE REPAIR=====DATABASE REPAIR
+
 IF CRASHED
 ctrl + c
 
@@ -24,7 +30,7 @@ if crash:
 cd ~ 
 ./mongod —repair
 
-———————————
+______________
 
 /data directory (inside /workspace) and cd into it. Once in run rm mongo.lock then cd back into and run ./mongod 
 
@@ -32,3 +38,11 @@ cd ~ /data
 rm mongod.lock
 cd
 ./mongod
+______________
+
+
+
+
+
+
+
